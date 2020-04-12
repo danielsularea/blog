@@ -4,6 +4,7 @@ layout: post
 categories: android
 ---
 
+
 This article applies to API >= 16. When something requires a different API level it will be highlighted. 
 
 In some cases you want your activity to be full screen and that means hiding some system elements - the status bar and the navigation bar. One way of doing it is to call the method `setSystemUiVisibility()` on the decor view. Remember that the decor view is the topmost view and you can get a reference to it by calling `getWindow().getDecorView()`. 
