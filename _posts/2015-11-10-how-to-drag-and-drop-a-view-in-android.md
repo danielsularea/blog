@@ -1,9 +1,8 @@
 ---
 title: How to drag and drop in android
 layout: post
+categories: android
 ---
-
-![Android](/images/2015/Android-logo-PSD.jpg)
 
 Android provides support for drag and drop since API level 11. In this post we'll see how drag&drop works.
 
@@ -11,7 +10,7 @@ At a high level, the drag and drop operation works as follows: you first start b
 
 Start by creating a new project in your favorite IDE. The layout is simple, we have a `RelativeLayout` and an `ImageView` we'd like to drag. 
 
-```language-html-line-numbers
+```java
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -37,7 +36,7 @@ PS: For this example you can copy the little android image from the `/resources/
 Your MainActivity's `onCreate()` method will look like this:
 
 
-```language-java-line-numbers
+```java
 ...
 private ImageView androidIv;
 private RelativeLayout layoutTo;
@@ -92,7 +91,7 @@ We got the reference for the `RelativeLayout` and we're going to set a listener 
 
 Implementing this interface requires the implementation of `onDrag(View, DragEvent)`. The method looks like this
 
-```language-java-line-numbers
+```java
 @Override
 public boolean onDrag(View v, DragEvent event) {
     final int action = event.getAction();
