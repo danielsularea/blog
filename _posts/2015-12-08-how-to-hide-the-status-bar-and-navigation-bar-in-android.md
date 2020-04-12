@@ -1,6 +1,7 @@
 ---
 title: How to hide the status bar and navigation bar in android
 layout: post
+categories: android
 ---
 
 This article applies to API >= 16. When something requires a different API level it will be highlighted. 
@@ -14,7 +15,7 @@ The `setSystemUiVisibility()` takes an `int` as an argument, which you will buil
 
 The method call then looks like this:  
 
-```language-java-line-numbers
+```java
 decorView = getWindow().getDecorView();
 decorView.setSystemUiVisibility(
     View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | 
@@ -41,7 +42,7 @@ You can also attach a listener to be informed of the system UI visibility change
 
 Here's how your `MainActivity` will look:
 
-```language-java-line-numbers
+```java
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -82,7 +83,7 @@ Below is a working example with a toggle button which allows you to hide or show
 
 `activity.xml` layout:
 
-```language-html-line-numbers
+```java
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
