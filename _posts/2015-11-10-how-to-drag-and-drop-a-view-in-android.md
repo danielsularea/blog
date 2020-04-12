@@ -1,7 +1,9 @@
 ---
 title: How to drag and drop in android
 layout: post
+categories: android
 ---
+
 
 Android provides support for drag and drop since API level 11. In this post we'll see how drag&drop works.
 
