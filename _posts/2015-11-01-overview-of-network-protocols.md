@@ -1,6 +1,7 @@
 ---
 title: Overview of network protocols
 layout: post
+categories: networking
 ---
 
 The 4-layer internet model is an abstract organization of the functions  of a network communication. Each layer is implemented as an independent module and as such their implementation can change without affecting the others'.
