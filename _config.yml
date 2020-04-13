@@ -4,6 +4,7 @@ email: me@daniel.eu.com
 description: > # this means to ignore newlines until "show_exerpts:" 
  Software engineer based in Munich, Germany.
 show_excerpts: true # set to true to show excerpts on the homepage
+baseurl: /blog
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -47,7 +48,7 @@ plainwhite:
 # - about.md
 
 # Build settings
-theme: jekyll-theme-cayman
+# theme: jekyll-theme-cayman
 
 plugins:
   - jekyll-seo-tag
